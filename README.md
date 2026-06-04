@@ -1,7 +1,7 @@
 <table align="center">
   <tr>
     <td valign="middle">
-      <img src="Frontend/public/logo.png" height="90"/>
+      <img src="GOWheels_Frontend/public/logo.png" height="90"/>
     </td>
     <td valign="middle">
       <h1 style="margin: 0 0 0 12px;">
@@ -55,7 +55,6 @@ The platform provides:
 * Vehicle Booking
 * Rental Tracking
 * Role-Based Access Control
-* Secure Payment Ready Architecture
 * Real-Time Availability Tracking
 * Redis-Based Performance Optimization
 
