@@ -4,8 +4,8 @@ spring:
       client:
         registration:
           google:
-            client-id: ${ CLIENT_ID }
-            client-secret: ${ CLIENT_SERCET_ID }
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_ID}
             scope:
               - openid
               - profile
