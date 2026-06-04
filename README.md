@@ -17,69 +17,57 @@
 
 ---
 
-# 👨‍💻 Developer
+<p align="center">
+  <img src="GoWheels_Frontend/public/Logo.png" width="220" alt="GoWheels Logo"/>
+</p>
 
-This project was designed, developed, tested, and deployed independently by:
+<h1 align="center">🚗 GoWheels - Car Rental System</h1>
 
-### **Durga Prasad Koppula**
-
-Responsibilities:
-
-* Frontend Development (React, HTML, CSS, JavaScript)
-* Backend Development (Spring Boot, REST APIs)
-* Database Design (MySQL)
-* Authentication & Authorization (Spring Security + JWT)
-* Caching Implementation (Redis)
-* Docker Containerization
-* API Testing using Postman
-* Deployment & DevOps
-* System Architecture Design
+<p align="center">
+  A Full Stack Car Rental Management Platform built using React, Spring Boot, MySQL, Redis Cloud, Docker, and JWT Authentication.
+</p>
 
 ---
 
 # 🚀 Live Demo
 
-* 🌐 **Frontend:** YOUR_FRONTEND_URL
-* ⚙️ **Backend:** YOUR_BACKEND_URL
+* 🌐 **Frontend:** YOUR_VERCEL_URL
+* ⚙️ **Backend:** YOUR_RENDER_URL
 
 ---
 
 # 📖 Project Overview
 
-GoWheels is a modern Car Rental Management System that enables users to browse, book, rent, and manage vehicles online.
+GoWheels is a modern Car Rental Management System that enables customers to browse available vehicles, rent cars online, and manage their bookings seamlessly.
 
-The platform provides:
-
-* User Registration & Authentication
-* Vehicle Management
-* Vehicle Booking
-* Rental Tracking
-* Role-Based Access Control
-* Real-Time Availability Tracking
-* Redis-Based Performance Optimization
+The platform provides secure authentication, role-based access control, vehicle management, rental tracking, Redis-powered caching, and cloud deployment for high performance and scalability.
 
 ---
 
 # 🛠️ Tech Stack
 
-## 🔹 Frontend
+## 🎨 Frontend
 
 <p>
   <img src="https://skillicons.dev/icons?i=html" height="60"/>
   <img src="https://skillicons.dev/icons?i=css" height="60"/>
+  <img src="https://skillicons.dev/icons?i=bootstrap" height="60"/>
   <img src="https://skillicons.dev/icons?i=js" height="60"/>
   <img src="https://skillicons.dev/icons?i=react" height="60"/>
 </p>
 
 * HTML5
 * CSS3
-* JavaScript
+* Bootstrap 5
+* JavaScript (ES6+)
 * React.js
 * Axios
 
+**Deployment:** Vercel
+
 ---
 
-## 🔹 Backend
+## ⚙️ Backend
 
 <p>
   <img src="https://skillicons.dev/icons?i=java" height="60"/>
@@ -90,34 +78,41 @@ The platform provides:
 * Java 21
 * Spring Boot
 * Spring Security
+* JWT Authentication
+* Google OAuth 2.0
 * Spring Data JPA
-* Hibernate
+* Hibernate ORM
 * REST APIs
 * Maven
 
+**Deployment:** Render
+
 ---
 
-## 🔹 Database
+## 🗄️ Database
 
 <p>
   <img src="https://skillicons.dev/icons?i=mysql" height="60"/>
 </p>
 
-* MySQL
+* TiDB Cloud
+* MySQL Compatible Database
 
 ---
 
-## 🔹 Caching
+## ⚡ Caching
 
 <p>
   <img src="https://skillicons.dev/icons?i=redis" height="60"/>
 </p>
 
-* Redis
+* Redis Cloud
+* Distributed Caching
+* Performance Optimization
 
 ---
 
-## 🔹 DevOps & Deployment
+## 🐳 DevOps & Tools
 
 <p>
   <img src="https://skillicons.dev/icons?i=docker" height="60"/>
@@ -126,13 +121,13 @@ The platform provides:
 </p>
 
 * Docker
+* Docker Compose
 * Git
 * GitHub
-* Render / Railway / VPS
 
 ---
 
-## 🔹 API Testing
+## 🧪 API Testing
 
 <p>
   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" height="60"/>
@@ -145,23 +140,24 @@ The platform provides:
 # 🏗️ System Architecture
 
 <p align="center">
-  <img src="Frontend/public/architecture.png" width="950"/>
+  <img src="GoWheels_Frontend/public/architecture.png" width="1000"/>
 </p>
 
 ### 🔄 Architecture Overview
 
-The application follows a modern multi-layer architecture.
+The application follows a multi-layer architecture that ensures scalability, maintainability, and security.
 
 ### 🖥️ Client Layer
 
-* React Single Page Application
-* Responsive User Interface
+* React Single Page Application (SPA)
+* Responsive UI
 * Axios API Communication
-* JWT Authentication
+* JWT Token Handling
 
 ### ⚙️ Application Layer
 
 * Spring Boot REST APIs
+* Controller Layer
 * Service Layer
 * Repository Layer
 * DTO Layer
@@ -170,50 +166,54 @@ The application follows a modern multi-layer architecture.
 
 ### 🗄️ Data Layer
 
-* MySQL Database
+* TiDB Cloud Database
+* MySQL Compatible Storage
 * Hibernate ORM
 * Spring Data JPA
 
-### 🐳 Infrastructure Layer
+### ☁️ Infrastructure Layer
 
 * Docker Containers
-* Containerized Deployment
-* Cloud Hosting Support
-
-> The architecture ensures scalability, maintainability, security, and high performance.
+* Render Deployment
+* Vercel Deployment
+* Redis Cloud
 
 ---
 
 # ✨ Features
 
-## 👤 User Features
+## 👤 Customer Features
 
-### 🔐 Authentication
+### 🔐 Authentication & Authorization
 
 * User Registration
 * User Login
 * JWT Authentication
+* Google OAuth 2.0 Login
 * Secure Password Encryption
+* Role-Based Access Control
 
 ### 🚗 Car Browsing
 
-* View Available Cars
+* Browse Available Cars
 * Search Cars
 * Filter Cars by Category
 * View Car Details
+* Check Vehicle Availability
 
-### 📅 Booking System
+### 📅 Car Rental Management
 
-* Rent Cars
+* Rent Cars Online
 * Select Rental Duration
-* Track Booking Status
-* View Booking History
+* Track Active Rentals
+* View Rental History
+* Manage Current Bookings
 
 ### 👤 Profile Management
 
-* Update Profile
-* Manage Personal Information
-* View Rental Records
+* View Profile Information
+* Update Personal Details
+* Manage Account Information
 
 ---
 
@@ -224,46 +224,85 @@ The application follows a modern multi-layer architecture.
 * Add New Cars
 * Update Car Details
 * Delete Cars
-* Manage Availability
+* Manage Vehicle Availability
+* Upload and Manage Car Images
 
-### 👥 User Management
+### 📋 Rental Management
 
-* View Registered Users
-* Manage User Accounts
+* View Customer Rentals
+* Monitor Active Rentals
+* Track Rental History
+* View Booking Details
 
-### 📊 Dashboard
+### 👤 Profile Management
 
-* Total Cars
-* Total Users
-* Active Rentals
-* Revenue Statistics
-
-### 📋 Booking Management
-
-* Approve Rentals
-* Reject Requests
-* Monitor Active Bookings
+* View Admin Profile
+* Update Profile Information
 
 ---
 
-# 🔐 Security
+# ⚡ Performance Features
 
-* Spring Security
-* JWT Authentication
-* Password Encryption
+### Redis Cloud Integration
+
+* Faster Data Retrieval
+* Reduced Database Load
+* Frequently Accessed Data Caching
+* Improved Response Time
+* Better Scalability
+
+### Backend Optimization
+
+* Efficient JPA Queries
+* Hibernate ORM
+* DTO-Based Data Transfer
+* RESTful API Design
+* Optimized Database Access
+
+---
+
+# 🔐 Security Features
+
+* Spring Security Integration
+* JWT Token Authentication
+* Google OAuth 2.0 Authentication
+* BCrypt Password Encryption
 * Role-Based Authorization
-* CORS Configuration
 * Protected REST Endpoints
+* Secure CORS Configuration
+* Input Validation
+* Global Exception Handling
 
 ---
 
-# ⚡ Performance Optimization
+# 📂 Project Structure
 
-* Redis Caching
-* Optimized Database Queries
-* Pagination Support
-* Lazy Loading
-* Efficient API Responses
+```text
+GoWheels
+│
+├── GoWheels_Backend
+│   ├── controller
+│   ├── service
+│   ├── repository
+│   ├── entity
+│   ├── dto
+│   ├── config
+│   ├── security
+│   └── exception
+│
+├── GoWheels_Frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── context
+│   │   └── assets
+│   │
+│   └── public
+│
+├── docker-compose.yml
+└── README.md
+```
 
 ---
 
@@ -273,6 +312,7 @@ The application follows a modern multi-layer architecture.
 
 ```bash
 git clone https://github.com/KoppulaDurgaPrasad/GoWheels.git
+
 cd GoWheels
 ```
 
@@ -288,7 +328,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-Backend runs on:
+Backend runs at:
 
 ```bash
 http://localhost:8080
@@ -306,7 +346,7 @@ npm install
 npm start
 ```
 
-Frontend runs on:
+Frontend runs at:
 
 ```bash
 http://localhost:3000
@@ -314,56 +354,10 @@ http://localhost:3000
 
 ---
 
-## 4️⃣ Redis Setup
-
-```bash
-docker run -d --name redis \
--p 6379:6379 \
-redis
-```
-
----
-
-## 5️⃣ Docker Setup
+## 4️⃣ Docker Setup
 
 ```bash
 docker-compose up --build
-```
-
----
-
-# 🚀 Deployment
-
-* 🌐 Frontend Deployment
-* ⚙️ Backend Deployment
-* 🗄️ MySQL Database
-* ⚡ Redis Cache
-* 🐳 Docker Containers
-
----
-
-# 📂 Project Structure
-
-```text
-GoWheels
-│
-├── GoWheels_Backend
-│   ├── Controller
-│   ├── Service
-│   ├── Repository
-│   ├── Entity
-│   ├── DTO
-│   ├── Config
-│   └── Security
-│
-├── GoWheels_Frontend
-│   ├── Components
-│   ├── Pages
-│   ├── Services
-│   ├── Context
-│   └── Assets
-│
-└── docker-compose.yml
 ```
 
 ---
@@ -372,7 +366,8 @@ GoWheels
 
 ### Durga Prasad Koppula
 
-GitHub:
+🔗 GitHub:
+
 https://github.com/KoppulaDurgaPrasad
 
 ---
@@ -380,3 +375,5 @@ https://github.com/KoppulaDurgaPrasad
 # ⭐ Support
 
 If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+Your support and feedback are greatly appreciated!
