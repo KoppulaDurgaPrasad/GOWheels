@@ -1,7 +1,7 @@
 <table align="center">
   <tr>
     <td valign="middle">
-      <img src="GoWheels_Frontend/public/Logo.png" height="90"/>
+      <img src="GoWheels_Frontend/public/Logo.png" height="120"/>
     </td>
     <td valign="middle">
       <h1 style="margin: 0 0 0 12px;">
@@ -13,18 +13,6 @@
 
 <p align="center">
   A Full Stack Car Rental Management Platform built using Spring Boot, React, MySQL, Docker, and Redis.
-</p>
-
----
-
-<p align="center">
-  <img src="GoWheels_Frontend/public/Logo.png" width="220" alt="GoWheels Logo"/>
-</p>
-
-<h1 align="center">🚗 GoWheels - Car Rental System</h1>
-
-<p align="center">
-  A Full Stack Car Rental Management Platform built using React, Spring Boot, MySQL, Redis Cloud, Docker, and JWT Authentication.
 </p>
 
 ---
