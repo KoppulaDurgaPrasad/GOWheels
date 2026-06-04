@@ -19,8 +19,8 @@
 
 # 🚀 Live Demo
 
-* 🌐 **Frontend:** YOUR_VERCEL_URL
-* ⚙️ **Backend:** YOUR_RENDER_URL
+* 🌐 **Frontend:** https://go-wheels-gamma.vercel.app/
+* ⚙️ **Backend:** https://gowheels-w4uy.onrender.com
 
 ---
 
