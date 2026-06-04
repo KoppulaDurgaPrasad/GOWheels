@@ -130,8 +130,8 @@ public class SecurityConfig {
                                         admin.getRole().name()
                                 );
 
-                                response.sendRedirect(
-                                        "http://localhost:5173/oauth-success?token=" + token
+                               response.sendRedirect(
+                                     "https://go-wheels-gamma.vercel.app/oauth-success?token=" + token
                                 );
                                 return;
 
