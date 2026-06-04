@@ -1,7 +1,7 @@
 <table align="center">
   <tr>
     <td valign="middle">
-      <img src="GoWheels_Frontend/public/Logo.png" height="120"/>
+      <img src="GoWheels_Frontend/public/Logo.png" height="180"/>
     </td>
     <td valign="middle">
       <h1 style="margin: 0 0 0 12px;">
