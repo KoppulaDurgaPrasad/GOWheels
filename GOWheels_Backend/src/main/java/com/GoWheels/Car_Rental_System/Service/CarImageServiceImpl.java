@@ -9,6 +9,7 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -24,6 +25,9 @@ public class CarImageServiceImpl
 
     private final CarImageRepository
             carImageRepository;
+
+     @Value("${APP_URL}")
+     private String appUrl;
 
     @Override
     @CacheEvict(
@@ -84,9 +88,7 @@ public class CarImageServiceImpl
             image.setCar(car);
 
             image.setImageUrl(
-
-                    "http://localhost:8080/uploads/"
-                            + fileName
+             appUrl + "/uploads/" + fileName
             );
 
             return carImageRepository
