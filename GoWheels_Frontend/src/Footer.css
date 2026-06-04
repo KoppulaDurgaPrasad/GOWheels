@@ -1,0 +1,29 @@
+.site-footer {
+  background-color: #111;
+  color: #ffd700;
+  padding: 40px 40px;
+  font-size: 1rem;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: auto;
+  border: 1px solid;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 14px 15px;
+    font-size: 0.85rem;
+  }
+}

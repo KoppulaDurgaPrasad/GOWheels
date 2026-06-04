@@ -1,0 +1,20 @@
+name: Gowheels
+
+services:
+  backend:
+    container_name: Gowheels-backend
+    build:
+      context: ./GoWheels_Backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./GoWheels_Backend/uploads:/app/uploads
+
+  frontend:
+    container_name: Gowheels-frontend
+    build:
+      context: ./GoWheels_Frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend

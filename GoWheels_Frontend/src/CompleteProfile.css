@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #ffd700;
+  font-family: Arial, sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #111 inset !important;
+  -webkit-text-fill-color: #ffd700 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: #111;
+  padding: 20px 15px 40px;
+}
+
+.profile-card {
+  flex: 1;
+  width: 100%;
+  max-width: 620px;
+  background: #111;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow:
+    0 0 30px rgba(255, 215, 0, 0.08),
+    0 20px 60px rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.progress-container {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.progress-container p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.progress-bar-wrapper {
+  height: 8px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd700, #ffcc00);
+  border-radius: 20px;
+  min-width: 6px;
+  transition: width 0.4s ease;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+.section {
+  background: #0d0d0d;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.section h3 {
+  margin-bottom: 6px;
+  color: aliceblue;
+}
+
+.section input,
+.section select {
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #ffd700;
+  background: #111;
+  color: #ffd700;
+  padding: 0 14px;
+  transition: 0.25s ease;
+}
+
+.section select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23FFD700' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.section select option {
+  background: #111;
+  color: #ffd700;
+}
+
+.section input + input,
+.section input + select,
+.section select + input,
+.section select + input[type="date"] {
+  margin-top: 14px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(84%) sepia(86%) saturate(749%) hue-rotate(358deg);
+  cursor: pointer;
+}
+
+.section h3 + input,
+.section h3 + select {
+  margin-top: 14px;
+}
+
+.section input:focus,
+.section select:focus {
+  outline: none;
+  border-color: #ffd700;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+.phone-container {
+  display: flex;
+  margin-top: 14px;
+  border: 1px solid #ffd700;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 46px;
+}
+
+.phone-container span {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: rgba(255, 215, 0, 0.12);
+  font-size: 14px;
+}
+
+.phone-container input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffd700;
+  padding: 0 12px;
+}
+
+.upload-box {
+  margin-top: 14px;
+  border: 1px solid #ffd700;
+  border-radius: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: rgba(255, 215, 0, 0.08);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+}
+
+.upload-btn {
+  background: #ffd700;
+  color: #111;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.upload-text {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.file-selected {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ffd700;
+  background: rgba(255, 215, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-selected span {
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.file-selected button {
+  background: #ffd700;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(90deg, #ffd700, #ffcc00);
+  color: #111;
+  border-radius: 12px;
+  border: none;
+  margin-top: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+
+@media (max-width: 500px) {
+  .page {
+    padding: 15px 10px 30px;
+  }
+  .profile-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+  .section {
+    padding: 14px;
+  }
+  .title {
+    font-size: 20px;
+  }
+
+  .section input,
+  .section select {
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .phone-container {
+    height: 42px;
+  }
+
+  .upload-box {
+    height: 60px;
+    padding: 0 12px;
+  }
+
+  .upload-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  .file-selected {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .file-selected button {
+    width: 100%;
+  }
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.country-code {
+  background: #111;
+  color: #ffd700;
+
+  border: 1px solid rgba(255, 215, 0, 0.15);
+
+  padding: 14px 18px;
+
+  border-radius: 14px 0 0 14px;
+
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 70px;
+}
+
+@media (min-width: 980px) {
+  .profile-card {
+    max-width: 700px;
+    padding: 35px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .section {
+    padding: 22px;
+  }
+
+  .section input,
+  .section select {
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .upload-box {
+    height: 75px;
+  }
+
+  .submit-btn {
+    height: 52px;
+    font-size: 16px;
+  }
+}

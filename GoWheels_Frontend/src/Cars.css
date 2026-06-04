@@ -1,0 +1,547 @@
+.carsPage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-bottom: 35px;
+
+  flex-wrap: wrap;
+}
+
+.searchContainer {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 280px;
+}
+
+.searchBar {
+  flex: 1;
+
+  height: 58px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 18px;
+
+  background: #111;
+
+  color: #fff;
+
+  padding: 0 22px;
+
+  font-size: 15px;
+
+  border: 1px solid rgba(255, 215, 0, 0.12);
+
+  transition: 0.3s ease;
+}
+
+.searchBar:focus {
+  border-color: #ffd700;
+
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.15);
+}
+
+.searchBar::placeholder {
+  color: #777;
+}
+
+.searchBtn,
+.filterBtn,
+.addBtn {
+  height: 58px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.searchBtn {
+  width: 58px;
+
+  background: #ffd700;
+
+  color: #111;
+}
+
+.searchBtn:hover {
+  background: #e6c200;
+}
+
+.filterBtn {
+  padding: 0 24px;
+
+  background: #1a1a1a;
+
+  color: #ffd700;
+
+  border: 1px solid rgba(255, 215, 0, 0.08);
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.filterBtn:hover {
+  background: #222;
+}
+
+.addBtn {
+  padding: 0 28px;
+
+  background: #ffd700;
+
+  color: #111;
+}
+
+.addBtn:hover {
+  background: #e6c200;
+}
+
+.carCountBox {
+  margin-bottom: 28px;
+}
+
+.carCountBox h3 {
+  color: #ffd700;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+.carGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+.squareCarCard {
+  width: 100%;
+
+  height: 420px;
+
+  background: #111;
+
+  border-radius: 32px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition: 0.4s ease;
+
+  border: 1px solid rgba(255, 215, 0, 0.08);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.squareCarCard:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.carCategory {
+  display: inline-block;
+  padding: 4px 10px;
+
+  background: rgba(255, 215, 0, 0.15);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+
+  color: #ffd700;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  margin: 6px 0;
+}
+
+.squareImage {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.squareCarCard:hover .squareImage {
+  transform: scale(1.08);
+}
+
+.noImage {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #666;
+
+  font-size: 18px;
+}
+
+.squareInfo {
+  position: absolute;
+
+  bottom: -90px;
+
+  left: 0;
+
+  width: 100%;
+
+  padding: 24px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.96),
+    rgba(0, 0, 0, 0.75),
+    transparent
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  gap: 14px;
+
+  transition: 0.45s ease;
+}
+
+.squareCarCard:hover .squareInfo {
+  bottom: 0;
+}
+
+.squareInfo h2 {
+  color: #fff;
+
+  font-size: 34px;
+
+  font-weight: 700;
+}
+
+.carPrice {
+  color: #ffd700;
+
+  font-size: 42px;
+
+  font-weight: 800;
+}
+
+.carPrice span {
+  font-size: 14px;
+
+  color: #bbb;
+
+  margin-left: 5px;
+}
+
+.statusText {
+  width: 180px;
+
+  padding: 10px 18px;
+
+  border-radius: 40px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.availableText {
+  background: rgba(0, 255, 136, 0.15);
+
+  color: #00ff88;
+
+  border: 1px solid rgba(0, 255, 136, 0.25);
+
+  box-shadow: 0 0 18px rgba(0, 255, 136, 0.1);
+}
+
+.rentedText {
+  background: rgba(255, 77, 77, 0.15);
+
+  color: #ff4d4d;
+
+  border: 1px solid rgba(255, 77, 77, 0.25);
+
+  box-shadow: 0 0 18px rgba(255, 77, 77, 0.1);
+}
+
+.maintenanceText {
+  background: rgba(0, 140, 255, 0.18);
+
+  color: #3da5ff;
+
+  border: 1px solid rgba(61, 165, 255, 0.35);
+
+  box-shadow: 0 0 22px rgba(61, 165, 255, 0.2);
+}
+
+.cardActions {
+  width: 100%;
+
+  display: flex;
+
+  gap: 12px;
+}
+
+.editBtn,
+.deleteBtn,
+.viewBtn,
+.bookBtn {
+  flex: 1;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.editBtn {
+  background: #ffd700;
+
+  color: #111;
+}
+
+.editBtn:hover {
+  background: #e6c200;
+
+  transform: translateY(-2px);
+}
+
+.deleteBtn {
+  background: #ff4d4d;
+
+  color: #fff;
+}
+
+.deleteBtn:hover {
+  background: #ff1f1f;
+
+  transform: translateY(-2px);
+}
+
+.viewBtn {
+  background: #222;
+
+  color: #fff;
+}
+
+.viewBtn:hover {
+  background: #333;
+
+  transform: translateY(-2px);
+}
+
+.bookBtn {
+  background: #ffd700;
+  color: #111;
+}
+
+.bookBtn:hover {
+  background: #e6c200;
+
+  transform: translateY(-2px);
+}
+
+.emptyCarsBox {
+  width: 100%;
+
+  min-height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  background: #111;
+
+  border-radius: 24px;
+}
+
+.emptyCarsBox h2 {
+  color: #fff;
+
+  margin-bottom: 10px;
+
+  font-size: 32px;
+}
+
+.emptyCarsBox p {
+  color: #888;
+
+  font-size: 16px;
+}
+
+@media screen and (max-width: 785px) {
+  .carsGrid {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 28px;
+  }
+
+  .squareCarCard {
+    width: 92%;
+
+    max-width: 380px;
+
+    height: 460px;
+  }
+
+  .squareInfo h2 {
+    font-size: 28px;
+  }
+
+  .carPrice {
+    font-size: 36px;
+  }
+
+  .cardActions {
+    flex-direction: row;
+
+    justify-content: center;
+  }
+
+  .editBtn,
+  .deleteBtn,
+  .viewBtn,
+  .bookBtn {
+    width: 45%;
+  }
+
+  .topActions {
+    flex-direction: column;
+
+    gap: 18px;
+
+    align-items: stretch;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .filterBtn,
+  .addCarBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .squareCarCard {
+    width: 100%;
+
+    height: 430px;
+  }
+
+  .squareInfo {
+    padding: 18px;
+  }
+
+  .squareInfo h2 {
+    font-size: 24px;
+  }
+
+  .carPrice {
+    font-size: 32px;
+  }
+
+  .statusText {
+    width: 160px;
+
+    font-size: 13px;
+  }
+
+  .cardActions {
+    gap: 10px;
+  }
+
+  .editBtn,
+  .deleteBtn,
+  .viewBtn,
+  .bookBtn {
+    font-size: 14px;
+
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchContainer {
+    width: 100%;
+  }
+
+  .filterBtn,
+  .addBtn {
+    width: 100%;
+  }
+
+  .carGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .squareCarCard {
+    width: 100%;
+  }
+}

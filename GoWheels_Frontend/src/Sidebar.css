@@ -1,0 +1,273 @@
+.adminSidebar {
+  width: 95px;
+  background: #111;
+  border-right: 1px solid rgba(255, 215, 0, 0.08);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  padding: 28px 18px;
+
+  transition: 0.4s ease;
+
+  overflow: hidden;
+
+  z-index: 1000;
+}
+
+.adminSidebar:hover {
+  width: 290px;
+}
+
+.adminLogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  color: #ffd700;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  margin-bottom: 35px;
+
+  white-space: nowrap;
+}
+
+.adminLogo span {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.adminSidebar:hover .adminLogo span {
+  opacity: 1;
+}
+
+.welcomeBox {
+  position: relative;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 215, 0, 0.1),
+    rgba(255, 215, 0, 0.03)
+  );
+
+  border: 1px solid rgba(255, 215, 0, 0.12);
+
+  border-radius: 28px;
+
+  padding: 26px 22px;
+
+  margin-bottom: 34px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  transition: 0.4s ease;
+}
+
+.welcomeBox:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(255, 215, 0, 0.22);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+.welcomeBox::before {
+  content: "";
+
+  position: absolute;
+
+  top: -60px;
+  right: -60px;
+
+  width: 160px;
+  height: 160px;
+
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.16), transparent 70%);
+
+  border-radius: 50%;
+}
+
+.welcomeBox h3 {
+  color: #ffffff;
+
+  font-size: 34px;
+
+  font-weight: 800;
+
+  margin-bottom: 12px;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+.welcomeBox p {
+  color: #ffd700;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.4px;
+
+  text-shadow: 0 0 14px rgba(255, 215, 0, 0.18);
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+.adminSidebar:hover .welcomeBox h3,
+.adminSidebar:hover .welcomeBox p {
+  opacity: 1;
+}
+
+.sidebarMenu {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.sidebarMenu li {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 18px 20px;
+
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+
+  transition: 0.35s ease;
+
+  white-space: nowrap;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  overflow: hidden;
+
+  backdrop-filter: blur(10px);
+}
+
+.sidebarMenu li:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 215, 0, 0.12),
+    rgba(255, 215, 0, 0.04)
+  );
+
+  transform: translateX(6px);
+
+  border: 1px solid rgba(255, 215, 0, 0.12);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.sidebarMenu li span {
+  opacity: 0;
+
+  transform: translateX(-8px);
+
+  transition: 0.35s ease;
+}
+
+.adminSidebar:hover .sidebarMenu li span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.activeMenu {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 215, 0, 0.18),
+    rgba(255, 215, 0, 0.06)
+  );
+
+  color: #ffd700 !important;
+
+  border: 1px solid rgba(255, 215, 0, 0.18);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+.menuIcon {
+  width: 26px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+
+  transition: 0.3s ease;
+}
+
+.sidebarMenu li:hover .menuIcon {
+  transform: scale(1.12);
+}
+
+.logout {
+  margin-top: 44px;
+
+  color: #ff6666 !important;
+
+  border: 1px solid rgba(255, 0, 0, 0.08);
+}
+
+.logout:hover {
+  background: rgba(255, 0, 0, 0.08);
+
+  border: 1px solid rgba(255, 0, 0, 0.16);
+}
+
+@media (max-width: 785px) {
+  .adminSidebar {
+    width: 88px;
+  }
+
+  .adminSidebar:hover {
+    width: 250px;
+  }
+
+  .welcomeBox {
+    padding: 22px 18px;
+
+    border-radius: 24px;
+  }
+
+  .welcomeBox h3 {
+    font-size: 28px;
+  }
+
+  .welcomeBox p {
+    font-size: 18px;
+  }
+}
