@@ -29,15 +29,16 @@ public class JwtFilter extends OncePerRequestFilter {
         String path = request.getRequestURI();
 
         if (path.startsWith("/api/auth") ||
-                path.startsWith("/api/customer/register") ||
-                path.startsWith("/oauth2") ||
-                path.startsWith("/api/admin/create") ||
-                path.startsWith("/login/oauth2")) {
+        path.startsWith("/api/customer/register") ||
+        path.startsWith("/oauth2") ||
+        path.startsWith("/api/admin/create") ||
+        path.startsWith("/login/oauth2") ||
+        path.startsWith("/uploads") ||
+        path.startsWith("/api/cars")) {
 
-            filterChain.doFilter(request, response);
-            return;
-        }
-
+    filterChain.doFilter(request, response);
+    return;
+}
         String header = request.getHeader("Authorization");
 
         if (header != null && header.startsWith("Bearer ")) {
