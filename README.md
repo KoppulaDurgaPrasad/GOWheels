@@ -28,7 +28,7 @@
 
 GoWheels is a modern Car Rental Management System that enables customers to browse available vehicles, rent cars online, and manage their bookings seamlessly.
 
-The platform provides secure authentication, role-based access control, vehicle management, rental tracking, Redis-powered caching, and cloud deployment for high performance and scalability.
+The platform provides secure authentication, role-based access control, vehicle management, Cloudinary-powered image management, rental tracking, Redis-powered caching, and cloud deployment for high performance and scalability.
 
 ---
 
@@ -71,6 +71,7 @@ The platform provides secure authentication, role-based access control, vehicle 
 * Spring Data JPA
 * Hibernate ORM
 * REST APIs
+* Cloudinary Image Storage
 * Maven
 
 **Deployment:** Render
@@ -97,6 +98,23 @@ The platform provides secure authentication, role-based access control, vehicle 
 * Redis Cloud
 * Distributed Caching
 * Performance Optimization
+
+---
+
+---
+
+## ☁️ Cloud Storage
+
+<p>
+  <img src="https://cdn.simpleicons.org/cloudinary/3448C5" height="60"/>
+</p>
+
+* Cloudinary
+* Secure Image Uploads
+* Cloud-Based Media Storage
+* Optimized Image Delivery
+* Automatic Image Compression
+* CDN Powered Image Access
 
 ---
 
@@ -151,6 +169,7 @@ The application follows a multi-layer architecture that ensures scalability, mai
 * DTO Layer
 * Business Logic Layer
 * Redis Cache Layer
+* Cloudinary Integration
 
 ### 🗄️ Data Layer
 
@@ -213,7 +232,7 @@ The application follows a multi-layer architecture that ensures scalability, mai
 * Update Car Details
 * Delete Cars
 * Manage Vehicle Availability
-* Upload and Manage Car Images
+* Upload and Manage Car Images via Cloudinary Integration
 
 ### 📋 Rental Management
 
@@ -239,6 +258,14 @@ The application follows a multi-layer architecture that ensures scalability, mai
 * Improved Response Time
 * Better Scalability
 
+### Cloudinary Optimization
+
+* Cloud-Based Media Delivery
+* CDN Accelerated Image Loading
+* Automatic Image Compression
+* Optimized Bandwidth Usage
+* Faster Frontend Rendering
+
 ### Backend Optimization
 
 * Efficient JPA Queries
@@ -260,6 +287,8 @@ The application follows a multi-layer architecture that ensures scalability, mai
 * Secure CORS Configuration
 * Input Validation
 * Global Exception Handling
+* Secure Cloudinary Media Storage
+* Protected Image Upload APIs
 
 ---
 
@@ -269,30 +298,38 @@ The application follows a multi-layer architecture that ensures scalability, mai
 GoWheels
 │
 ├── GoWheels_Backend
-│   ├── controller
-│   ├── service
-│   ├── repository
-│   ├── entity
-│   ├── dto
-│   ├── config
-│   ├── security
-│   └── exception
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java/com/GoWheels/Car_Rental_System
+│   │   │   │   ├── Config
+│   │   │   │   ├── Controller
+│   │   │   │   │   └── DTO
+│   │   │   │   ├── Entity
+│   │   │   │   ├── Repository
+│   │   │   │   ├── Service
+│   │   │   │   └── CarRentalSystemApplication.java
+│   │   │   └── resources
+│   │   └── test
+│   │
+│   ├── uploads
+│   ├── Dockerfile
+│   └── pom.xml
 │
 ├── GoWheels_Frontend
+│   ├── public
 │   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── context
 │   │   └── assets
 │   │
-│   └── public
+│   ├── .env
+│   ├── Dockerfile
+│   ├── nginx.conf
+│   ├── package.json
+│   ├── vite.config.js
+│   └── vercel.json
 │
 ├── docker-compose.yml
 └── README.md
 ```
-
----
 
 # ⚙️ Run Locally
 
