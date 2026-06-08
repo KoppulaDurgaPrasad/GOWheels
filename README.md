@@ -101,7 +101,6 @@ The platform provides secure authentication, role-based access control, vehicle 
 
 ---
 
----
 
 ## ☁️ Cloud Storage
 
